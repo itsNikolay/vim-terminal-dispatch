@@ -3,7 +3,7 @@ if exists('g:loaded_vim_terminal_dispatch_autoload') || &cp || version < 700
 endif
 let g:loaded_vim_terminal_dispatch_autoload = 1
 
-fun! vimterminaldispatch#translateRangeFun2() range
+fun! vim_terminal_dispatch#translateRangeFun() range
   let [lnum1, col1] = getpos("'<")[1:2]
   let [lnum2, col2] = getpos("'>")[1:2]
   let lines = getline(lnum1, lnum2)
@@ -14,7 +14,7 @@ fun! vimterminaldispatch#translateRangeFun2() range
   call chansend(s:chan, selectedText."\n")
 endf
 
-fun! vimterminaldispatch#focusTerminalDispatch2()
+fun! vim_terminal_dispatch#focusTerminalDispatch()
   let s:chan = &channel
   echo "VimTerminalDispatch focused on channel: ".s:chan
 endf
