@@ -1,7 +1,7 @@
-" if exists('g:loaded_vim_terminal_dispatch_autoload') || &cp || version < 700
-"   finish
-" endif
-" let g:loaded_vim_terminal_dispatch_autoload = 1
+if exists('g:loaded_vim_terminal_dispatch_autoload') || &cp || version < 700
+  finish
+endif
+let g:loaded_vim_terminal_dispatch_autoload = 1
 
 fun! TranslateRangeFun2() range
   let [lnum1, col1] = getpos("'<")[1:2]
@@ -10,7 +10,6 @@ fun! TranslateRangeFun2() range
   let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
   let lines[0] = lines[0][col1 - 1:]
   let selectedText = join(lines, "\n")
-  " echo selectedText
 
   call chansend(s:chan, selectedText."\n")
 endf
