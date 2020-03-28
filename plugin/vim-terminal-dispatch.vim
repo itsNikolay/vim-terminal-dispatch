@@ -5,7 +5,7 @@ let g:loaded_vim_terminal_dispatch_plugin = 1
 
 
 command! -bang -nargs=* FocusTerminalDispatch call vimterminaldispatch#focusTerminalDispatch2()
-command! -bang -nargs=* -range TranslateRangeFun call vimterminaldispatch#focusTerminalDispatch2TranslateRangeFun2()
+command! -bang -nargs=* -range TranslateRangeFun call vimterminaldispatch#translateRangeFun2()
 
 noremap <nowait> <silent> <leader>! :FocusTerminalDispatch<CR>
 vnoremap <nowait> g :<c-u>TranslateRangeFun<CR>
