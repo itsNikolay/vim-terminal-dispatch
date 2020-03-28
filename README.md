@@ -1,5 +1,9 @@
 # Vim Terminal Dispatch
 
+Send text to terminal window
+
+## Demo
+
 <img src="https://github.com/itsNikolay/vim-terminal-dispatch/raw/output/output.gif" />
 
 ## Getting Started
