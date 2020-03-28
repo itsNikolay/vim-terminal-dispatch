@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-1. Run terminal in split: `:vs | te`
+1. Run terminal in split: `:vsplit | terminal`
 1. Focus window with: `<leader>!`
 1. Select Command to run: `Shift+V`
 1. To dispatch command to terminal: Press `g`
@@ -16,9 +16,13 @@ echo "hello world"
 
 # Can work with any console
 irb
-message = ["hello", "world"].join(" ")
-message.split(" ").first
 
 # Finish
 exit
+```
+
+```ruby
+# It Works
+message = ["hello", "world"].join(" ")
+message.split(" ").first
 ```
