@@ -1,5 +1,7 @@
 # Vim Terminal Dispatch
 
+[!Demo](https://github.com/itsNikolay/vim-terminal-dispatch/raw/output/output.gif)
+
 ## Getting Started
 
 1. Run terminal in split: `:vsplit | terminal`
