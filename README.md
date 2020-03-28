@@ -1,6 +1,6 @@
 # Vim Terminal Dispatch
 
-[!Demo](https://github.com/itsNikolay/vim-terminal-dispatch/raw/output/output.gif)
+<img src="https://github.com/itsNikolay/vim-terminal-dispatch/raw/output/output.gif" />
 
 ## Getting Started
 
